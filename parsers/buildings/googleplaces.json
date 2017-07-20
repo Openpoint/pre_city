@@ -1,0 +1,497 @@
+{
+   "html_attributions" : [],
+   "next_page_token" : "CvQB7AAAAC0FYQOGiIADHOQIkO7Xsu53umYb6pefPjc6fv-LWdjuqpLAO3O6DYcQx1XI1GVyqQgt6kzW7XQmT-uXId35saMDs5st9jXW-vNRkmsXibeD9IvBnyTtvaTdANpp1AqjVSIeLNpV3ykgi3yo6_6uVEmWC2OMQIUF7xDRp9-LMFcKb9l9-YALFxZbFEo2V7I5tQhS435qpHCmp213jFmlIvTeEpbZSXEEVJ8dhF9wKc4FJVS528XEKCwvCy1RUNVlmwfwkLKmP5ytL-0-q8NwSdyUyrzlL-TyLQ1BJcPZCFp7HcYwCt9eYjDjzFywwNgTGhIQ1KjwfUlP0LzL0tpHOyVbZxoUWGDl15cyeHPWvfIo5l-CO6SIwNg",
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.6680204,
+               "lng" : -8.630497499999999
+            },
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 52.6886401,
+                  "lng" : -8.5703399
+               },
+               "southwest" : {
+                  "lat" : 52.6143899,
+                  "lng" : -8.68994
+               }
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/geocode-71.png",
+         "id" : "82f746804089229475a37b1dbf6f6ad371f04632",
+         "name" : "Limerick",
+         "place_id" : "ChIJE1FUH2FcW0gRMHMxl6nHAAo",
+         "reference" : "CnRuAAAAYU-FlF5EqnTg67PLV0J-5cJM9lmyoXVpr2kOzg6A6IVo443YIRhMVzoMfcQ241omScYzJm79MpEdZ1dofmjn64CvBwPWm_S6sVNrVBRa_5JJlNt8YqwTiUYcnk9oaokfgQmqPMLc2uj6WdmQ2qTbXxIQFNF4rNqFXAbkgt5qIT67hBoUe8XJwjq3wdsOx7pyuxKqzAGvtfU",
+         "scope" : "GOOGLE",
+         "types" : [ "locality", "political" ],
+         "vicinity" : "Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.660449,
+               "lng" : -8.637333999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "d8d0a2e7dacc5edf8e353a6cac181f6545566583",
+         "name" : "Clarion Hotel Limerick",
+         "photos" : [
+            {
+               "height" : 768,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAAf4CQVO2LpDj2hvFnAGS5VPs0wYj0f7aMJ9enEhI7sDO1y61BBFq35JqOGp77aTxbg9aYLzGokpUjTypcvi9fb7Rls7YjH03Bw95VZQhYn6ivESchPLeHBT3kBYwxltO3o_UwY3tYhRSeAvW5KX4gkxIQL-weIGQGFBK37lAYYX8V2BoU4Tt3nRn5-2sG_1sjcsdCZ-1gXcM",
+               "width" : 1024
+            }
+         ],
+         "place_id" : "ChIJBfwI5olcW0gRAztyqBy7hMY",
+         "rating" : 3.9,
+         "reference" : "CnRqAAAAPW_Vo-6-toi4Q84Y2NxEVOJFkHO0vtAy3TgPx4-I78dIVTBIfJm4JsPfDDs37_kXytIG4G_8wff2ZTCDzPPCBZ6OGXZPMF8hdUBvn4iVszH3sjAT5fzvbvVVaIiR2GL8M4AqXKYD-e7_PfkkXM1J2RIQpGwGvTlW2vrQ4luZY0jvnxoUDrmGP-zdCS9zmNuTlkuRxv13Pgo",
+         "scope" : "GOOGLE",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "Steamboat Quay, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.674216,
+               "lng" : -8.642519
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/stadium-71.png",
+         "id" : "61dfc7b4f00ea8cf1fa9a6c1bbe2e44cf3e4570b",
+         "name" : "Thomond Park",
+         "photos" : [
+            {
+               "height" : 577,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAuw1Ob6k9743CU3fxxGj6yPZcM44QEn3Zw-BrTJxHoYe3kb79eGkc-Vxm7llLYzknWs_0NtmDF_PQKFJoNeuqI_imNx_IxOzlmcgJHHzSp5jSJAsziBYQBCcPVdsOxkY9iO6qc--LHXzaDiUv63GMaxIQrOXpqeZadKcLuKrC-JDeexoUi-e2KxNGBPOUmAdvu36-dFMCslM",
+               "width" : 1280
+            }
+         ],
+         "place_id" : "ChIJhYhBMvZcW0gRA6dDQBwgI4E",
+         "rating" : 4.9,
+         "reference" : "CmRgAAAA8_W0thrjiqflw7n_9UmEc_CyO2om0t2cSL1eAY47yfG7l5-F-8zvityaZk9O6JC3m-Vyrr71Z3NvvZfvr-pVuTNApOlP5rW00SoPQMlJ8yIsdecPqyTDD7gFPNkaJWBNEhC8t2rtf9xnW0nnTfcVUhFwGhTpMKSU9VXS5ZY01leqS2R30fX_FA",
+         "scope" : "GOOGLE",
+         "types" : [ "stadium", "establishment" ],
+         "vicinity" : "Cratloe Road, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.669718,
+               "lng" : -8.625522
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "496a270304eda11eb0a1826d91f6af01ffba2272",
+         "name" : "King John's Castle",
+         "photos" : [
+            {
+               "height" : 500,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAFL_6SSJtHdm9LbxNKO1z6D3pAdCaXTNwPm-SwzPaNgEpqkhZbue2rZ1z1ifdopEtcgwaIpH-R-EGfMuk-pNgqVTlz4N0QQ71KBw6UByp68ajsE46swlzTt1UGKzeHXwaHdWQr_lCqQjc_w8bKCz-PRIQM3d8VZn8egRwqopadsR2_RoUQyql_iJgrjZKgeEnmFRzXPA0buM",
+               "width" : 750
+            }
+         ],
+         "place_id" : "ChIJPUMCzkJcW0gR9K5pfZYQifo",
+         "rating" : 4.1,
+         "reference" : "CnRmAAAAYxxOyIv16os2Ad1MYMAsQGc74p7O2ZfXYtobaVdSoCaHMOvj1AiNPK83a7Ka9wnFf7kBJ7s43PbpCOjPxm-lMYlUsh7FvLZJ4jbS4f7VLw8tiUtyBoiwcow0iCj3S2xj0rUDTrDtNJCCqVAT8NN7rRIQ7x_BuPir3LqKu_uy-LAmdRoUQq8cMEViZgic4JzUaxkYDRHB2wg",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "Nicholas Street, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.658865,
+               "lng" : -8.628475999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/art_gallery-71.png",
+         "id" : "2a5f3924e6f3fa89a00c61649e1fa84dafe4a482",
+         "name" : "Limerick City Gallery of Art",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 300,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAA3KDv3IhufvUEnn_0PW88i9Bz5K5QZTFF4KfMF9jPwYmTXcESXlb8aZOXLZbcEsZWQ8R-BAHAGjRFxU8JudKIthOjuqtT5QZs5zff227zPMlcCV8Z7j-sH_0Y6a2EoguCPWEDkH9syACCyi6YnMVWoxIQdubnuUKIdJvY0DM97cNt7xoUnlRQ5rjmYwfcxQRStvTPch1NGqs",
+               "width" : 400
+            }
+         ],
+         "place_id" : "ChIJPcxYj2RcW0gRV_NsIa_HcJw",
+         "rating" : 4.4,
+         "reference" : "CnRwAAAAhMr_n84As_4wpz-AAyTnqCCIXAwElrP9pYvlIKdF8NlghwkVYWKSOuREwSlmVTVNotA2lF3Ufy9uCsKqm2jy-WibgM7uP0q52cg9T36nMBCOMtkKe6j7dd1-pohHKweGTvxt--XUV3iWYKpSdrR-qRIQUsB35Fqm83zZ5SphUfFqJBoUXia0nSx9-u6ua67AawUQZn1CTl0",
+         "scope" : "GOOGLE",
+         "types" : [ "art_gallery", "museum", "establishment" ],
+         "vicinity" : "Carnegie Building, Pery Square, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.652932,
+               "lng" : -8.639995000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "f2332e00f95942f207fdd517adbbe2fb523c6045",
+         "name" : "Mary Immaculate College",
+         "photos" : [
+            {
+               "height" : 450,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAVvaWNkE2Ehuiv9qSEbChtl46uAp3FqD3jj0JulZCB4Iy24J-e0V-hvbdO3InGI4SfDJWLENPvNFf61x2ktO1eeWULshHE64tPWSqpa_5XptygaACowvGX4GsCVbZ4HSmoBfCI5CidLgKMJ989t0JRBIQmGr0ITwsvWz0lY1HqVxebxoUf02wsz0OSiO2clW9SpL92Vgp6qk",
+               "width" : 800
+            }
+         ],
+         "place_id" : "ChIJCXge-YZcW0gRTldrTtguPxI",
+         "rating" : 4.6,
+         "reference" : "CnRqAAAAVN_3VFM2ldX5Ovu4pyRbhBeMgwdlNhn3rN9OIl-SrVccPb6mHny32yRjNuR028cBy9D53KKjaKMHIBh_VgVJ5co1mO8aJnpzlBhLVV0E9bWsafFqX2bySiZhlaa2Pnsezl7oS5-0Q2Owk85_LbkGoxIQmmKYp_1wPzX0VlSkFKqHuhoU9-KSJl4wlYFH3etUnngsTMSsP0k",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "South Circular Road, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.675107,
+               "lng" : -8.647323999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/university-71.png",
+         "id" : "ef2d77c1959617c0f1516a344b6e3364bb24508f",
+         "name" : "Limerick Institute of Technology",
+         "photos" : [
+            {
+               "height" : 1371,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRqAAAAifi6kO0B0zNYcB7EvlimMUxDFfmbnXM06nXC5m5l_vM8Ua6iM-KepCVhG9bFZaXYz5lE5JYsL23ln4IJDGyRgMcNh6S129ytIbBHThXlHkz8mQCcoiRnWb6zlCoZFs6D1LcQvn22GiN6MAJGaeQ1RxIQNfoL8vTZPdAkuk-BVxgZzBoUgXGmOlJOk-BRnFTH24G0y1ahoBw",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJefJLFvdcW0gRANC0vnvuPjQ",
+         "reference" : "CoQBcwAAACaDWQ1tNGrczal5teBbdIR9ns02tDPsWn1zxfJyTbr0DFe-4THz4DhjlzDczKcYNasNz8n8Bp558KQfYqvVoLubVCQ2yPbve4OBbMrT1mpZTnN138vo2Xat0xTzbitPlNGv91RpPwVF3HgaRWN8SwhN-_QJMicc-XFj6LEst9TZEhDsNfTGIzSiPoWXN6H9xzzQGhQi6GnsQ_bx9McQDbl7pNj3m5ZTxw",
+         "scope" : "GOOGLE",
+         "types" : [ "university", "establishment" ],
+         "vicinity" : "Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.668398,
+               "lng" : -8.623384
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "c5ed92cea0aad1afe0ef39b8f47b7c9b335a8077",
+         "name" : "Saint Mary's Cathedral",
+         "photos" : [
+            {
+               "height" : 2000,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAA9ViybP24Jya4z1zIax8w3LJBFru7efSHef-9BKY_sQYvArU_-9ekOqWlog6EGBSRceKICVS9gh6yVgoCId4Z6Z_O-gj8Ik0nq2m0MsxrKqVbJ0QLfHFUDI1wMqDg8hdSXPE_RUVeC9aHRutqrtb_RhIQdezAERzvAbOpwCcYhjiQiBoUh-5aoxiccuGQBOSlkLv_soa6JkA",
+               "width" : 3008
+            }
+         ],
+         "place_id" : "ChIJu0V1mEJcW0gRnv7TwN_Ms-Y",
+         "reference" : "CnRqAAAA9yU3mx1Qlfv2TD-sxXOpiQryzPo0sqziqm4p8r_5iZckzJ8FO9y2l2vicN0mvuKDJiRT0hQWPINBvM3s6UoIKwEge-d2n3QIEucDQ494P31pHwo2IAgL_LuXXTqYzO7NL6As76HFlR0swkH4NHLPmRIQIg_icdhK1AynNZ5kpFrmjxoUMciVrcXijAPOZ--AuwTVeOJ9jDo",
+         "scope" : "GOOGLE",
+         "types" : [ "place_of_worship", "establishment" ],
+         "vicinity" : "Bridge Street"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.666759,
+               "lng" : -8.619320999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+         "id" : "85764741741ad789f7ac2b45e8a36eec9b7924ec",
+         "name" : "Absolute Hotel Limerick",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 375,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBeQAAAJ_fwOK3uNYfcy-rT8nceS-X1TUTggs85JJXYgQo7vB_AL7oaD3l1w2_AmVgRkQ3zrIwah0W8WL3MC57VqEMWbrYTVTuCoKpODN-BCYX711twT2P9bD9N0Te6bwPJB0q4WBQ7Cjul-ZsPzLjCRP1di387z-L6KNmt9Qzg_k2rC-XEhDnfXHbRDf9vfm-OUe4ua5qGhQ-08nn7WMiw9_Fc8MkMCHZX_zuSA",
+               "width" : 375
+            }
+         ],
+         "place_id" : "ChIJ76zwv2lcW0gReOd-VVi9VaM",
+         "rating" : 4.1,
+         "reference" : "CnRrAAAAg4UDdstpii66cunVNyk92AqKytnjGo-sbjCGTMzYD8tt4mbAUE1VgCDuCNBEgw9AIgNx7M2nFmlPHtTnrhtlpwRo2gYihW4CeiZE2gUqtuzCAyfu-9QWzIQTX5xfA_ZwFiptaToE2wkXEOwVTZQd_hIQ0xbdYVitiu0XhbCtZWZdlxoUgGCZ_8uawllknxMekXhlGcFz04s",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "lodging", "spa", "establishment" ],
+         "vicinity" : "Sir Harry's Mall, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.67008,
+               "lng" : -8.654261
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/stadium-71.png",
+         "id" : "557b0d45b70a04fc39321abca323ee66eb9dff7a",
+         "name" : "Gaelic Grounds",
+         "photos" : [
+            {
+               "height" : 478,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CnRoAAAAcVXGKs5GuZ750RzfWQCSYD-mNTu1Ca2myI5ygrR662VwUXylLeSI65FVU44r3-Q0BcfT__g0NZXZXqB7ilFAZGo3GB1sblaSidUzb-hnreza1O95rk5uRP7cYXMYKEFbmHMaKTI6f3h0ZJXl31YVehIQQFmyA8MkO_3VdwvEWOJztBoUF6MQLRGgsWk5Cy2lBHg7wdbF7wk",
+               "width" : 640
+            }
+         ],
+         "place_id" : "ChIJv4mwCfJcW0gRh5X_G2iv6Z0",
+         "reference" : "CnRiAAAAd9qJVwULTVaZD54_2HF-kzO_S8NywtBma7jyfTKyECXe0sjmbDr8pWyOxMXbAVz3rQrzMy7PfTsNfRMr2ZHUFKq92-E8mjHOmPZU20kLAcekNKocYgfSKSkvV4cF5M0RbCXAGDiJZljmPrm-vxLlMBIQgAoJFm27STA6AYFjTrC-LhoUIKwm2HRO2QyaFptQjlLGKP1JTTM",
+         "scope" : "GOOGLE",
+         "types" : [ "stadium", "establishment" ],
+         "vicinity" : "Ireland"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.657511,
+               "lng" : -8.623366000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "63fdfe87ce95bc8c5254dc72eda3bcdcda34c47c",
+         "name" : "Jackman Park",
+         "place_id" : "ChIJfUcASWVcW0gRgv1GJwMVxnQ",
+         "reference" : "CmRfAAAA_fj8QsrbLuf6Y4ZCI9dlupPh-iyczUs1h7sAltG4eSaAlJviuWCwIsXXpu7qOWsTnxmvW-MgNZ5BHgXxMSV_lKDj_8bun2M-mrkqQAOoACRvZ7lJIRVi8q4w8Mz7vVY8EhBvRPtxM8hZ2Ql48yGnk5AeGhSB68fuxCAvSkMOkvXOtc48FRv_ZA",
+         "scope" : "GOOGLE",
+         "types" : [ "establishment" ],
+         "vicinity" : "Ireland"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.666209,
+               "lng" : -8.632008000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+         "id" : "8009c993d270fad7b649767068946dd470f1c7e8",
+         "name" : "Limerick Strand Hotel",
+         "photos" : [
+            {
+               "height" : 1692,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAlF4qXQ0NXlU27ii7sVpUwaBPPgVnZxKD-1aQnMPx3c9FPjlMjLmDcG12BhHRpWMSId0X2_QVUjm9InfuqjpxAG8klpf6nvr2SsHtZraksRcH6TiCiKOfIJN9Wc7_GDIgwUxZ7LCHp5xP1Flir87LbxIQ20SoGDXte2RTjfwSMiR5yBoUOgi9R6ie5uUQVpcHj2uRmWG9k9M",
+               "width" : 2048
+            }
+         ],
+         "place_id" : "ChIJhf2jtmBcW0gRWYO-mEhrbuc",
+         "rating" : 4.6,
+         "reference" : "CnRpAAAAMgWhrnG8cJiJr7Er8Jk4eScAe2jnzAHQDyIwg_TcwLPEMUuobpdD7EtpEmKkzfX0yYmtGJBn0VF7AwImasQzzVZ8M9r2_wfLIDHo4skAbd7y5wYlTFz7LGeFPkFOn9qlf-ESY4PxslNpricy6CExWxIQYcSqOO2erRuJEiYWB9qIdxoUH8ceqRjdopfyRt0YZcFHqkI1B9I",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "lodging", "establishment" ],
+         "vicinity" : "Ennis Rd, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.660399,
+               "lng" : -8.627853999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "173018ac1bd1a26a401c93f946c941449eff589a",
+         "name" : "Best Western Pery's",
+         "photos" : [
+            {
+               "height" : 960,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAwvhHNOcfIWhDbE9XYT98Yevtgg0aPKay34rp1oVMcUBl-1Os2XMBzLRuwdkuDLM_6SqUPli9lw6cUbwBhLzLvhp0-2NO1UCTgYaxhdJqIjm9ackA_gBirW0B2TIYYOMuPWgwl_CiwO_5n48fegr5ehIQMA0UiGIfAyP78NgM87HS3hoU1RhmgAFGVS6fbEjuHPbnu5AQ2l8",
+               "width" : 640
+            }
+         ],
+         "place_id" : "ChIJdbREDWRcW0gRXbSJxQfRExo",
+         "reference" : "CnRmAAAAWA9i0gJEB8RwaqWkLSZFJ2KOtzvZnWgyHq4SzWE6D7ZHzZYrOHd0ty14Shtga_II1emymOhKcYQXAHuFLOVsjTDewrk4TUjPdwfKI7i7nd0xQpbGoRfJOBZGKG1CYnQT7i0rdAleJfS9gr5d0lWfjxIQV8jDgl4eEll28JuGbr0tDhoUMPBB1dCpPnDwFupo-saKZP6vOC0",
+         "scope" : "GOOGLE",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "Glentworth Street, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.665496,
+               "lng" : -8.640726000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "7885888f6aa758691abaffb353895d918d57ac95",
+         "name" : "Ardscoil Rís",
+         "place_id" : "ChIJWyqFIItcW0gR8viutXX04dM",
+         "reference" : "CnRhAAAAri_ZxUKTm1fK_iv6EIN20OpJuC-8txJ_dvi2ttP4_jU1kVasrkH59pZd45sc9VfjE2rpPM5UT4uBWXDtao11ApTZzyUx2QGrs0XnZSIPW3D8JirRJHuLW-O_DAsHPF5_DtmSu6fP1oaiVpD7ApsdSBIQq0X6isBXhKl0vEEtoNnQxhoUNbij6QD4JYw44Lth7s1I7AxUgq4",
+         "scope" : "GOOGLE",
+         "types" : [ "school", "establishment" ],
+         "vicinity" : "North Circular Road, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.660902,
+               "lng" : -8.632974000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "bae79a9cbd2c4f2e1ce3e123829729260ed208f6",
+         "name" : "Limerick City Hotel",
+         "photos" : [
+            {
+               "height" : 400,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAjE0Tn1x42LA4PPD5CZUjPvRKWOsE0DsVGUsJ6HkYxPb-gH4yRd4TQ_mbxvtlQFg8ng2zqIZlyIw9_nCrnZk8g6RlpLcuPJfKKMUX52HlE980HJBOMbRKVo5LxjWKMj8c7by3FJ7eEipDmNbVFpenjhIQh41yb1V6eTq6iR1wpVqD0xoU-9oZxqLXNuFkV97vEl3RUJqYlZ0",
+               "width" : 400
+            }
+         ],
+         "place_id" : "ChIJOWGrz2NcW0gRiIHj87Um2I8",
+         "rating" : 3.5,
+         "reference" : "CnRnAAAAXWOJQm-uYYklV-zbwnjZKoJ6pUiF0N5Z0hHTa39STE7DNh3ZWj9faiwsI0PbYhjxrIwz25IUWTPIS5eDUoM8XmA06ctJU7xTxFR0Pbr4PYiR7-z3eGT37ZAUj1fbTNqLIArOkFuczyMQHq8gxISJZhIQVc_awvJdGQ5lZVH44WetkhoUquOHKeTGJ-ehoBFYN2yn_08OlsU",
+         "scope" : "GOOGLE",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "Lower Mallow Street, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.667807,
+               "lng" : -8.650574000000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "91b3af97c6f5e01be7115d94f5d8e4d5bf805f45",
+         "name" : "Woodfield House Hotel",
+         "photos" : [
+            {
+               "height" : 531,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAStCIQ9C8L33wqlMChysi3BI9uOZ0wukiYkP7BWfO2rDJQRDYIpnlONfYIBJGq0b_FJxKY4vxF7cSSMsHXr-aWUzz4iQdzthuYrDFNZ_wCgo3toahqm2fA44FMOBbeWjsqdTnNlCu14J8eo86Gd85DhIQKxP0MNxwdZ871Q2vOuEdwRoUU4uXE8i0xieDCeCgn7Cbu6rG4ZI",
+               "width" : 800
+            }
+         ],
+         "place_id" : "ChIJjy7P5PJcW0gR_0EUjn3ZaxA",
+         "rating" : 4,
+         "reference" : "CnRoAAAAgxnHcUH8JhgrrYYMsXq6nbMC0yvd-pnAO51JfwNuZKLM9bnnB4W-iWVUbuApwLqKbAYLulUx5teV-NO3H_Peqoq8ZZanDFDeeWWWbYD2baGoOeMWRB0ILMi9KfQmW4Pfj3q_7mcKR4rpyA8KcK4ozxIQ08yVsNJF0RKyTuB6EpRfERoUlRm1k_6Ffe026AnD8EHZCRcIrzg",
+         "scope" : "GOOGLE",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "Ennis Rd, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.647345,
+               "lng" : -8.618689
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/lodging-71.png",
+         "id" : "999cb1bbff7f3555d8b27716112627bec068886a",
+         "name" : "Maldron Hotel Limerick",
+         "photos" : [
+            {
+               "height" : 110,
+               "html_attributions" : [],
+               "photo_reference" : "CnRlAAAA0q3eSZDRckHJAHgW7XDXKUgWTfnIKnTf2dtxTUnZKBD-NztRz2nQXaXgTBe0qDJCe0ChqJga3HgQS92EsIERomISfPAtxkLtTWOHZZKpveak8EbkOVUs-zcVGDvVukwT4vp2O_B5shMU3TF5hHXz7hIQpo5NGAfET3-PUjrOaxQxuhoUrUU1K9CpnM-O4QOkVCesHF17GfM",
+               "width" : 110
+            }
+         ],
+         "place_id" : "ChIJjVmWegZbW0gRmEIhUbe8snk",
+         "rating" : 4.1,
+         "reference" : "CnRpAAAAY9mfhEH2o6j5BzJ_CKC0J6_-89g0NOIlgvduq7hxD6Fha4JomfwIWI9CW5TO3Y64pCDvI0H039ZbRkrlmjl94Fz3Wm2g_bopUSsTN06fCauU91TCEZSEGzp9um_xWWTbE8IJxW9i2JZIKSiD8WJ7ZhIQwd4BsCxIprooP6K6HClh6BoUksvRTfgeoodvfOTHgYB1asNFvAg",
+         "scope" : "GOOGLE",
+         "types" : [ "lodging", "establishment" ],
+         "vicinity" : "Southern Ring Road, Roxboro"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.65869,
+               "lng" : -8.629049
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "f20eee854d0015231d190744c66554835cf307e7",
+         "name" : "No.1 Pery Square Hotel & Spa",
+         "photos" : [
+            {
+               "height" : 1490,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAR4fVg1vISzgG_Yg40Jm_kQ4EQtTekHQyiXFsg7OF_mBbqxpYwTooVlYwKEqjKLFeqYpzLh-sxBPQjTQ3XmeAylQr9FXGBmeKT1sAwpt4lM746QaGxsmAQqpeHTkVXGctMS7l6Y-XsbsSVjVqe5tCOBIQhqSnEUa3plwcEspmKh-7hRoUUHRABoTBCkDgWiHbkvpVXJJDxcE",
+               "width" : 1490
+            }
+         ],
+         "place_id" : "ChIJG_AOZ2NcW0gRi3te-Gz6j6I",
+         "reference" : "CnRwAAAAGnbsuOcDGaQ872f59xqePrmf-nSApphVCusUq6hbRnMeMHIhU0c967qQ8dmPtn8eCG9cSLJGcLBzbcS4GreHk5oI2OVdMctlWbK6PFjq8G_msUVCf7WDKhlqJtwZoe2gN_IYHdwa-B1emlNKrzDYrRIQMS3ZmDxouuyZRKU3-YZ_DxoUzpK5DWcjSydF0t6o24zPdwnOJfw",
+         "scope" : "GOOGLE",
+         "types" : [ "restaurant", "lodging", "food", "spa", "establishment" ],
+         "vicinity" : "1 Pery Square, Georgian Quarter"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.658847,
+               "lng" : -8.638418
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+         "id" : "a82dda863adde7ab91a5d51a47c20218c099b32a",
+         "name" : "Dolan's Pub & Restaurant",
+         "opening_hours" : {
+            "open_now" : true,
+            "weekday_text" : []
+         },
+         "photos" : [
+            {
+               "height" : 1000,
+               "html_attributions" : [ "From a Google User" ],
+               "photo_reference" : "CpQBhAAAAI0eFgg-bbax6ql3iZfK3crvdcg8iopYzUT6JeRgZz_fUzZTf4COywFMQr-slPtd9ImoW1u29ELAKSJmsVLmJrdetKmDBRNJp3p1RPun2AI1Su3D1lyh8xPuJG_Vw4cvvOc_g-t1Xw4itRNxtJiIcAmA-sBFzh8MxI2zrKUdCeekj4xHyqyRmOWHokrt-VhV1hIQVUTnEUpHo9wysE_SGsaplxoUJRtRDAjObYBwtEcEEzscYvIKQPk",
+               "width" : 563
+            }
+         ],
+         "place_id" : "ChIJFTe9tYlcW0gR7vKRjFhW0i4",
+         "rating" : 4.6,
+         "reference" : "CnRrAAAATKodwriSw0elIsNGJq712m7Mrqj6-4QSxF7d_bke0jxtMXi7mzmTXm4rciaJnDxtamNsj_c-0824xC-RTM3yKh57HZD7rbZGe_oR5aDNWdHHeE4EGy2RHfR12E1ABl5ISddOV1N8bRDXaZDKDbG29hIQZBeyFDLYNywc5JHXJ8D0JhoUx-LcKli0rMd_YnOBGcq9RvOkdZU",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "food", "establishment" ],
+         "vicinity" : "3/4 Dock Road, Limerick"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 52.663258,
+               "lng" : -8.629035
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/bar-71.png",
+         "id" : "1f89304f77a038970e9ff3a03e1c7245adaf7d11",
+         "name" : "The Savoy Hotel Limerick",
+         "photos" : [
+            {
+               "height" : 384,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAoGWpwjgMBqIeTw-lK_YLm0cjEvf03421E38NUBTcJ0l1fyrhj4HcE5YGkeK3-91lhwtABEcUfbTIRIknmXzBvFgg2Fs3_jpAfeG2Aj22zo_svIs8gDl29bk4Q97_xvYiQYbY5f4SstLgpVszwfRZShIQKbTIAxBbmcxGhaJkiflhMBoUp2RGXKWMdPpTfsy1_rc4jkkLDNA",
+               "width" : 576
+            }
+         ],
+         "place_id" : "ChIJi2UNwGZcW0gR679gLr2FuaI",
+         "rating" : 4.3,
+         "reference" : "CnRsAAAALfi_u56U1CdClfcA735dIM54juvd2nhFYR5QpOYX5PMXPmtTbU2ePBJ6fixtg2hdjw9Yu87994Yc-X7f1fsmiWUoPOZsYj_2TQpsjk4B66LxzmYVwA4Zg7T-ObxiI25W6unflvffaWbGS0-oi7R3EBIQ767-C6xd_2DUZgw0KY-aThoULlFfiAwiTSsz0O4zRwQQkOQPp68",
+         "scope" : "GOOGLE",
+         "types" : [ "bar", "restaurant", "lodging", "food", "establishment" ],
+         "vicinity" : "Henry Street, Limerick City"
+      }
+   ],
+   "status" : "OK"
+}
