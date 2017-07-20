@@ -6,4 +6,4 @@ PHP >=5
 PHP PDO and pdo_pgsql 
 Postgresql server >=9 with PostGIS
 
-Runs Through apache2 webserver
+Runs with apache2 webserver.
