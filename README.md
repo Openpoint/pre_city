@@ -10,9 +10,9 @@ Runs with apache2 webserver.
 
 Create a new pg database and user. Give user "superuser" privelidge (strange bug with permissions I couldn't figure). Assign user to db
 
-Using pg_restore (phppgadmin is chokeing) restore <approot>/dbpopulate.sql to your new database.
+Using pg_restore (phppgadmin is chokeing) restore \<approot\>/dbpopulate.sql to your new database.
 
-Create <approot>/php/settings.php:
+Create \<approot\>/php/settings.php:
 
 ```php
 <?php
