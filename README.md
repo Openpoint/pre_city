@@ -1,6 +1,8 @@
 # pre_city
 Proof of concept for [City](https://github.com/Openpoint/City) in PHP
 
+![City](https://github.com/Openpoint/pre_city/blob/master/city.png)
+
 Requires: 
 PHP >=5
 PHP PDO and pdo_pgsql 
