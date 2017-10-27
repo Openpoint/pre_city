@@ -1,4 +1,5 @@
 <?php
+
 class lkdata {
 	function lkdata($dbase) {
 	$this->dbase=$dbase;
@@ -38,7 +39,7 @@ class lkdata {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){			
+		if(!isset($response->fail)||!$response->fail){			
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			//return $response;			
 			return $this->parsedata($response);
@@ -62,7 +63,7 @@ class lkdata {
 			Array('token'=>':sid','value'=>$sid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){			
+		if(!isset($response->fail)||!$response->fail){			
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);			
 			return $this->parsedata($response);
 		}else{
@@ -79,9 +80,27 @@ class lkdata {
 		$return->vacantarea=0;
 		$return->derelictarea=0;
 		$return->unitcount=0;
-
+		$return->areas = (object)array();
+		$return->areas->total=0;
+		$return->areas->status = (object)array();
+		$return->areas->zoning = (object)array();
+		$return->levels = (object)array();
+			
 		forEach($response as $loop){
-			$return->levels->$loop['level']->level=$loop['level'];
+			$l = $loop['level'];
+			if(!isset($return->levels->$l)){
+				//fwrite($myfile, print_r($loop['level'], TRUE));
+				$return->levels->$l= (object)array();
+				$return->levels->$l->unitcount = 0;
+				$return->levels->$l->areas= (object)array();
+				$return->levels->$l->areas->total = 0;
+				$return->levels->$l->areas->unitcount = 0;		
+				$return->levels->$l->areas->status = (object)array();
+				$return->levels->$l->areas->zoning = (object)array();
+			}
+			
+			$return->levels->$l->level=$l;
+			
 			if(isset($loop['area'])){
 
 				if(!in_array($loop['uid'],$uid)){					
@@ -95,42 +114,92 @@ class lkdata {
 				if(!in_array($loop['lid'],$lid)){
 	
 					$return->areas->total=$return->areas->total+$loop['area'];
-					$return->levels->$loop['level']->areas->total=$return->levels->$loop['level']->areas->total+$loop['area'];
-					if(isset($loop['status'])){					
-						$return->areas->status->$loop['status']->total=$return->areas->status->$loop['status']->total+$loop['area'];
-						$return->levels->$loop['level']->areas->status->$loop['status']->total=$return->levels->$loop['level']->areas->status->$loop['status']->total+$loop['area'];
+					$return->levels->$l->areas->total=$return->levels->$l->areas->total+$loop['area'];
+					
+					if(isset($loop['status'])){
+						$s = $loop['status'];
+						if(!isset($return->areas->status->$s)){
+							$return->areas->status->$s = (object)array();
+							$return->areas->status->$s->zoning = (object)array();
+							$return->areas->status->$s->total = 0;
+						}
+						if(!isset($return->levels->$l->areas->status->$s)){
+							$return->levels->$l->areas->status->$s = (object)array();
+							$return->levels->$l->areas->status->$s->zoning = (object)array();
+							$return->levels->$l->areas->status->$s->total = 0;
+						}				
+						$return->areas->status->$s->total=$return->areas->status->$s->total+$loop['area'];
+						$return->levels->$l->areas->status->$s->total=$return->levels->$l->areas->status->$s->total+$loop['area'];
 
 					}
-					if(isset($loop['status'])&&isset($loop['lzid'])){
-						$return->areas->status->$loop['status']->zoning->$loop['lzid']->total=$return->areas->status->$loop['status']->zoning->$loop['lzid']->total+$loop['area'];
-						$return->levels->$loop['level']->areas->status->$loop['status']->zoning->$loop['lzid']->total=$return->levels->$loop['level']->areas->status->$loop['status']->zoning->$loop['lzid']->total+$loop['area'];					
-					}
+					
+
+					
 					if(isset($loop['lzid'])){
-						$return->areas->zoning->$loop['lzid']->zid=$loop['lzid'];
-						$return->levels->$loop['level']->areas->zoning->$loop['lzid']->zid=$loop['lzid'];
-						$return->areas->zoning->$loop['lzid']->total=$return->areas->zoning->$loop['lzid']->total+$loop['area'];
-						$return->levels->$loop['level']->areas->zoning->$loop['lzid']->total=$return->levels->$loop['level']->areas->zoning->$loop['lzid']->total+$loop['area'];
-					}							
+						$z = $loop['lzid'];
+						if(!isset($return->areas->zoning->$z)){
+							$return->areas->zoning->$z = (object)array();
+						}
+						if(!isset($return->areas->zoning->$z->total)){
+							$return->areas->zoning->$z->total = 0;
+						}				
+						if(!isset($return->levels->$l->areas->status->$s->zoning->$z)){
+							$return->levels->$l->areas->status->$s->zoning->$z = (object)array();
+						}
+						if(!isset($return->levels->$l->areas->status->$s->zoning->$z->total)){
+							$return->levels->$l->areas->status->$s->zoning->$z->total = 0;
+						}
+						if(!isset($return->levels->$l->areas->zoning->$z)){
+							$return->levels->$l->areas->zoning->$z = (object)array();
+						}
+						if(!isset($return->levels->$l->areas->zoning->$z->total)){
+							$return->levels->$l->areas->zoning->$z->total = 0;
+						}
+						$return->areas->zoning->$z->zid=$loop['lzid'];
+						$return->areas->zoning->$z->total=$return->areas->zoning->$z->total+$loop['area'];
+						$return->levels->$l->areas->zoning->$z->zid=$loop['lzid'];					
+						$return->levels->$l->areas->zoning->$z->total=$return->levels->$l->areas->zoning->$z->total+$loop['area'];
+					}
+					
+					if(isset($loop['status'])&&isset($loop['lzid'])){
+						if(!isset($return->areas->status->$s->zoning->$z)){
+							$return->areas->status->$s->zoning->$z = (object)array();
+						}
+						if(!isset($return->areas->status->$s->zoning->$z->total)){
+							$return->areas->status->$s->zoning->$z->total = 0;
+						}
+						$return->areas->status->$s->zoning->$z->total=$return->areas->status->$s->zoning->$z->total+$loop['area'];
+						$return->levels->$l->areas->status->$s->zoning->$z->total=$return->levels->$l->areas->status->$s->zoning->$z->total+$loop['area'];					
+					}	
+											
 					array_push($lid,$loop['lid']);
 										
 				}
-
+				
 			}
-
+				
 			if(isset($loop['zid'])){
+				$zz = $loop['zid'];
+				if(!isset($return->areas->zoning->$zz)){
+					$return->areas->zoning->$zz = (object)array();
+				}
+				if(!isset($return->areas->zoning->$zz->unitcount)){
+					$return->areas->zoning->$zz->unitcount = 0;
+				}
+				if(!isset($return->levels->$l->areas->zoning->$zz)){
+					$return->levels->$l->areas->zoning->$zz = (object)array();
+				}
+				if(!isset($return->levels->$l->areas->zoning->$zz->unitcount)){
+					$return->levels->$l->areas->zoning->$zz->unitcount = 0;
+				}				
 				$return->unitcount++;
-				$return->levels->$loop['level']->unitcount++;
-				$return->areas->zoning->$loop['zid']->unitcount++;
-				$return->levels->$loop['level']->areas->zoning->$loop['zid']->unitcount++;			
-			}				
+				$return->levels->$l->unitcount++;		
+				$return->areas->zoning->$zz->unitcount++;			
+				$return->levels->$l->areas->zoning->$zz->unitcount++;	
+						
+			}	
+					
 		}
-			
-		$foo=[];
-		forEach($return->zonings as $zone){
-			array_push($foo,$zone);
-		}
-		$return->zonings=$foo;
-
 		return $return;			
 	}
 }

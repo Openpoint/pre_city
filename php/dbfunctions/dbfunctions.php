@@ -38,7 +38,7 @@ class lkbase {
 			  levels.zid IS NOT NULL
 		";
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			$geojson=(object)array(
 				'type'=>'FeatureCollection',
@@ -78,7 +78,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			//set the key on the array to match the street ID (sid)
 			return $response;
@@ -92,7 +92,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -106,7 +106,7 @@ class lkbase {
 			Array('token'=>':gd_sid','value'=>$gd_sid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -119,7 +119,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			//set the key on the array to match the agent ID (aid)
 			$foo=array();
@@ -140,7 +140,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -154,7 +154,7 @@ class lkbase {
 			Array('token'=>':tid','value'=>$tid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -175,7 +175,7 @@ class lkbase {
 			Array('token'=>':lid','value'=>$lid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -189,7 +189,7 @@ class lkbase {
 			Array('token'=>':tid','value'=>$tid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -202,7 +202,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			//set the key on the array to match the zone ID (zid)
 			$foo=array();
@@ -225,7 +225,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -239,7 +239,7 @@ class lkbase {
 			Array('token'=>':pid','value'=>$pid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -248,8 +248,11 @@ class lkbase {
 	}
 	//get all units for city level
 	public function getallunits($level,$zid,$usage,$subusage,$refine,$status,$sid){
-		$strings= Array(
-		);
+		$strings= Array();
+		$subq=''; 
+		$subq2=''; 
+		$subq3=''; 
+		$subq4='';
 		if(isset($level)){
 			$subq4=" AND levels.level = :level";
 			array_push($strings, Array('token'=>':level','value'=>$level));
@@ -309,7 +312,7 @@ class lkbase {
 			units.lid = levels.lid".$subq4.$subq2.$subq3.$subq;
 
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -358,7 +361,7 @@ class lkbase {
 			units.lid = levels.lid".$subq4.$subq2.$subq3.$subq;
 
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -383,7 +386,7 @@ class lkbase {
 			Array('token'=>':status','value'=>$status)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -410,7 +413,7 @@ class lkbase {
 			Array('token'=>':lid','value'=>$lid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -439,7 +442,7 @@ class lkbase {
 			Array('token'=>':pid','value'=>$pid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -485,7 +488,7 @@ class lkbase {
 			Array('token'=>':uid','value'=>$uid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -499,7 +502,7 @@ class lkbase {
 			Array('token'=>':pid','value'=>$pid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -513,7 +516,7 @@ class lkbase {
 			Array('token'=>':aid','value'=>$aid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -527,7 +530,7 @@ class lkbase {
 			Array('token'=>':aid','value'=>$aid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -544,7 +547,7 @@ class lkbase {
 			Array('token'=>':gd_sid','value'=>$gd_sid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0]['sid'];
 		}else{
@@ -561,7 +564,7 @@ class lkbase {
 			Array('token'=>':color','value'=>$color)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0]['zid'];
 		}else{
@@ -584,7 +587,7 @@ class lkbase {
 			Array('token'=>':gd_pid','value'=>$gd_pid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0]['pid'];
 		}else{
@@ -602,7 +605,7 @@ class lkbase {
 				Array('token'=>':pid','value'=>$pid),
 			);
 			$response=$this->dbase->query($sql,$strings);
-			if(!$response->fail){
+			if(!isset($response->fail)||!$response->fail){
 				global $level;
 				$response=$response->fetchAll(PDO::FETCH_ASSOC);
 
@@ -633,7 +636,7 @@ class lkbase {
 			Array('token'=>':geom','value'=>$geom)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -655,7 +658,7 @@ class lkbase {
 			Array('token'=>':about','value'=>$about)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -677,7 +680,7 @@ class lkbase {
 			Array('token'=>':refine','value'=>$refine)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -707,7 +710,7 @@ class lkbase {
 			Array('token'=>':status','value'=>$status)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -730,7 +733,7 @@ class lkbase {
 			Array('token'=>':colval','value'=>$colval)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -746,7 +749,7 @@ class lkbase {
 			Array('token'=>':keyval','value'=>$keyval)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response->fetchAll(PDO::FETCH_ASSOC);
 			$response=Array($table);
 			return $response;
@@ -763,7 +766,7 @@ class lkbase {
 			Array('token'=>':pid','value'=>$pid),
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -788,7 +791,7 @@ class lkbase {
 		$strings= Array(
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -804,7 +807,7 @@ class lkbase {
 			Array('token'=>':uid','value'=>$uid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -820,7 +823,7 @@ class lkbase {
 			Array('token'=>':tid','value'=>$tid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response->fetchAll(PDO::FETCH_ASSOC);
 			return 'ok';
 		}else{
@@ -845,7 +848,7 @@ class lkbase {
 
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -865,7 +868,7 @@ class lkbase {
 			Array('token'=>':occupancy','value'=>$occupancy)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -887,7 +890,7 @@ class lkbase {
 			Array('token'=>':aid','value'=>$agents)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{
@@ -910,7 +913,7 @@ class lkbase {
 			Array('token'=>':aid','value'=>$aid)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response[0];
 		}else{
@@ -934,7 +937,7 @@ class lkbase {
 			Array('token'=>':tenant','value'=>$tenant)
 		);
 		$response=$this->dbase->query($sql,$strings);
-		if(!$response->fail){
+		if(!isset($response->fail)||!$response->fail){
 			$response=$response->fetchAll(PDO::FETCH_ASSOC);
 			return $response;
 		}else{

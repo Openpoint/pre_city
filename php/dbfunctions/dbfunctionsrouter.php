@@ -1,10 +1,19 @@
 <?php
 if(isset($data->command)){
-	
+		if(!isset($data->level)){
+			$data->level = 0;
+		}
+		if(!isset($data->status)){
+			$data->status = null;
+		}
+		$myfile = fopen("/tmp/testfile.txt", "w");
+		fwrite($myfile, print_r($data, TRUE));
+		fclose($myfile);	
 	//Getters
 	if($data->command == 'getprops'){	
 		//print_r(json_encode($data));
-		$action=$lkbase->getprops($data->level,$data->street,$data->zoning,$data->status);
+
+		$action=$lkbase->getprops($data->level);
 		print_r(json_encode($action));
 		return;
 	};
