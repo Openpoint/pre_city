@@ -24,7 +24,7 @@ lkcity.controller("mapview", ['$scope','$http','$timeout','$filter','getByProper
 
 				* */	
 				source: new ol.source.XYZ({
-					url: 'http://api.tiles.mapbox.com/v4/michaeljonker.le2nc7ip/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWljaGFlbGpvbmtlciIsImEiOiJHaEMtMWI4In0.Ato-3vh5AL49RQr3HKY97g'
+					url: 'https://api.tiles.mapbox.com/v4/michaeljonker.le2nc7ip/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWljaGFlbGpvbmtlciIsImEiOiJHaEMtMWI4In0.Ato-3vh5AL49RQr3HKY97g'
 				})
 				
 						
